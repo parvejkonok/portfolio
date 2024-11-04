@@ -161,6 +161,7 @@ p.lead {
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 1.7rem;
+
 	}
 }
 em, i, strong, b {
@@ -1024,6 +1025,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .grey-section p.lead {
 	color: #7d7d7d;
+	text-align: justify;
 }
 .section-intro {
 	max-width: 700px;
@@ -1513,6 +1515,7 @@ header .logo a {
 .intro-info .lead {
 	text-align: left;
 	padding-left: 13rem;
+	text-align: justify; 
 }
 
 .about-content {
@@ -1582,6 +1585,7 @@ header .logo a {
 	}
 	.intro-info .lead {
 		padding-left: 11rem;
+		text-align: justify;
 	}
 	.about-content h3 {
 		text-align: center;
