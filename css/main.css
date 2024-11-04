@@ -1910,18 +1910,21 @@ header .logo a {
 }
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
+	text-align: justify;
 }
 .popup-modal .description-box h4 {
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
+
 }
 .popup-modal .description-box p {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.4rem;
 	line-height: 2.4rem;
 	margin-bottom: 12px;
+	
 }
 .popup-modal .categories {
 	font-family: "poppins-bold", sans-serif;
@@ -2155,6 +2158,7 @@ header .logo a {
 }
 .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
+	text-align: justify;
 }
 
 /* pagination */
