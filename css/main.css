@@ -75,6 +75,7 @@ body {
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
+	text-align: justify;
 }
 
 /**
@@ -153,14 +154,17 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
-	font-size: 2rem;
-	line-height: 1.8;
-	color: #888888;
+    font-family: "lora-regular", serif; /* Sets the font family */
+    font-size: 2rem;                    /* Sets the font size */
+    line-height: 1.8;                   /* Controls the line height for better readability */
+    text-align: justify;                /* Justifies the paragraph text */
+    color: #888888;                     /* Sets the text color */
 }
+
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 1.7rem;
+		text-align: justify;
 	}
 }
 em, i, strong, b {
