@@ -1,7 +1,7 @@
 /**
  * =================================================================== 
  *
- * v1.0 Main Stylesheet
+ *  Kards v1.0 Main Stylesheet
  *  url: styleshout.com
  *  03-01-2016
  *  ------------------------------------------------------------------
@@ -75,7 +75,6 @@ body {
 	font-size: 1.7rem;
 	line-height: 3rem;
 	color: #6e6e6e;
-	text-align: justify;
 }
 
 /**
@@ -154,17 +153,14 @@ p img {
 	margin: 0;
 }
 p.lead {
-    font-family: "lora-regular", serif; /* Sets the font family */
-    font-size: 2rem;                    /* Sets the font size */
-    line-height: 1.8;                   /* Controls the line height for better readability */
-    text-align: justify;                /* Justifies the paragraph text */
-    color: #888888;                     /* Sets the text color */
+	font-family: "lora-regular", serif;
+	font-size: 2rem;
+	line-height: 1.8;
+	color: #888888;
 }
-
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 1.7rem;
-		text-align: justify;
 	}
 }
 em, i, strong, b {
@@ -1515,7 +1511,7 @@ header .logo a {
 	float: left;
 }
 .intro-info .lead {
-	text-align: justify;
+	text-align: left;
 	padding-left: 13rem;
 }
 
@@ -1614,7 +1610,7 @@ header .logo a {
 	}
 	.intro-info .lead {
 		padding-left: 0;
-		
+		text-align: center;
 	}
 }
 
@@ -1910,21 +1906,18 @@ header .logo a {
 }
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
-	text-align: justify;
 }
 .popup-modal .description-box h4 {
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.5rem;
 	line-height: 2.4rem;
 	margin-bottom: .6rem;
-
 }
 .popup-modal .description-box p {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.4rem;
 	line-height: 2.4rem;
 	margin-bottom: 12px;
-	
 }
 .popup-modal .categories {
 	font-family: "poppins-bold", sans-serif;
@@ -2158,7 +2151,6 @@ header .logo a {
 }
 .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
-	text-align: justify;
 }
 
 /* pagination */

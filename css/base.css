@@ -1,7 +1,7 @@
 /**
  * =================================================================== 
  *
- * v1.0 Base Stylesheet
+ *  Kards v1.0 Base Stylesheet
  *  url: styleshout.com
  *  03-01-2016
  *  ------------------------------------------------------------------
@@ -432,7 +432,7 @@ textarea {
 }
 
 .col-two,
-.col-1-4 {
+.col-1-6 {
 	width: 16.66667%;
 }
 
@@ -627,8 +627,8 @@ textarea {
 	clear: both;
 }
 
-.block-1-4 .bgrid {
-	width: 25%;
+.block-1-6 .bgrid {
+	width: 16.66667%;
 }
 
 .block-1-4 .bgrid {
@@ -659,8 +659,8 @@ textarea {
  * --------------------------------------------------------------- 
  */
 @media screen and (max-width:1024px) {
-	.block-s-1-4 .bgrid {
-		width: 25%;
+	.block-s-1-6 .bgrid {
+		width: 16.66667%;
 	}
 
 	.block-s-1-4 .bgrid {
