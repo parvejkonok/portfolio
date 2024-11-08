@@ -2529,80 +2529,73 @@ header .logo a {
 }
 
 
-/** 
- * ===================================================================
- * 18. footer - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-footer {
-	padding-bottom: 3rem;
-	font-size: 1.4rem;
-	font-family: "poppins-regular", sans-serif;
-}
-footer a, footer a:visited {
-	color: #FFFFFF;
-}
-footer a:hover, footer a:focus {
-	color: #FF0077;
-}
-footer .row {
-	max-width: 900px;
-}
-footer .social {
-	text-align: right;
-}
-footer .footer-social {
-	display: inline-block;
-	font-size: 2.1rem;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	top: -.3rem;
-}
-footer .footer-social li {
-	display: inline-block;
-	margin: 0 12px;
-	padding: 0;
-}
-footer .footer-social li a {
-	color: #FFFFFF;
-}
-footer .copyright span {
-	display: inline-block;
-}
-footer .copyright span::after {
-	content: "|";
-	display: inline-block;
-	padding: 0 1rem 0 1.2rem;
-	color: rgba(255, 255, 255, 0.1);
-}
-footer .copyright span:last-child::after {
-	display: none;
+/* Footer Styling */
+#footer {
+    background-color: #151515;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
 }
 
-/**
- * responsive:
- * footer
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:768px) {
-	footer {
-		text-align: center;
-	}
-	footer .social {
-		display: block;
-		width: 100%;
-		text-align: center;
-		margin-bottom: 1.5rem;
-	}
-	footer .copyright span {
-		display: block;
-	}
-	footer .copyright span::after {
-		display: none;
-	}
+/* Social Media Icons Styling */
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
+
+.footer-social ul li {
+    display: inline-block;
+}
+
+.footer-social ul li a {
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #FF0077; /* Highlight color on hover */
+}
+
+/* Footer Info Styling */
+.footer-info {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
+}
+
+.footer-info p {
+    margin: 0.5rem 0;
+}
+
+.footer-info a {
+    color: #FF0077;
+    text-decoration: none;
+}
+
+.footer-info a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #footer {
+        padding: 2rem 0;
+    }
+
+    .footer-social ul {
+        gap: 1rem;
+    }
+
+    .footer-info {
+        font-size: 1rem;
+    }
+}
+
 
 /**
  * go to top - (_layout.scss)
