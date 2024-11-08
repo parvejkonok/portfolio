@@ -2225,64 +2225,66 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
-#stats {
-	background: #990047;
-	padding-top: 7.2rem;
-	padding-bottom: 6rem;
-	text-align: center;
-}
-#stats .row {
-	max-width: 1440px;
-}
-#stats .stat {
-	border-left: 1px solid rgba(255, 255, 255, 0.12);
-	min-height: 17.4rem;
-}
-#stats .stat:first-child {
-	border: none;
-}
-#stats .icon-part i {
-	font-size: 4.8rem;
-	color: #000000;
-}
-#stats .stat-count {
-	color: #FFFFFF;
-	font-size: 3.6rem;
-	margin-top: 1.2rem;
-	margin-bottom: 0;
-	font-family: "poppins-medium", sans-serif;
-	color: white;
-}
-#stats .stat-title {
-	color: rgba(255, 255, 255, 0.5);
+ #stats {
+    background: #990047;
+    padding-top: 7.2rem;
+    padding-bottom: 6rem;
+    text-align: center;
 }
 
-/**
- * responsive:
- * stats
- * -------------------------------------------------------------------
- */
-@media only screen and (max-width:1024px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-		padding-bottom: 1.5rem;
-	}
-	#stats .stat:nth-child(3n+1) {
-		border: none;
-	}
+#stats .row {
+    max-width: 1440px;
+    margin: 0 auto; /* Center the row */
 }
-@media only screen and (max-width:768px) {
-	#stats .stat:nth-child(n) {
-		border-left: 1px solid rgba(255, 255, 255, 0.12);
-	}
-	#stats .stat:nth-child(2n+1) {
-		border: none;
-	}
+
+#stats .stats-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+    gap: 2rem; /* Space between columns */
 }
-@media only screen and (max-width:600px) {
-	#stats .stat:nth-child(n) {
-		border: none;
-	}
+
+#stats .stat {
+    min-height: 17.4rem;
+    text-align: center;
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 2rem;
+}
+
+#stats .stat:first-child {
+    border: none;
+}
+
+#stats .icon-part i {
+    font-size: 4.8rem;
+    color: #000000;
+}
+
+#stats .stat-count {
+    color: #FFFFFF;
+    font-size: 3.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 0;
+    font-family: "poppins-medium", sans-serif;
+}
+
+#stats .stat-title {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive styles for different screen sizes */
+
+/* Tablets or smaller screens */
+@media only screen and (max-width: 1024px) {
+    #stats .stats-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on smaller screens */
+    }
+}
+
+/* Mobile screens */
+@media only screen and (max-width: 768px) {
+    #stats .stats-list {
+        grid-template-columns: 1fr; /* 1 column on mobile screens */
+    }
 }
 
 
