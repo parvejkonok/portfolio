@@ -1625,6 +1625,14 @@ header .logo a {
  *
  * ------------------------------------------------------------------- 
  */
+ .grey-section {
+	background: #ebebeb;
+}
+.grey-section p.lead {
+	color: #7d7d7d;
+	text-align: justify;
+}
+
 #resume {
 	padding-top: 12rem;
 	padding-bottom: 12rem;
@@ -1640,11 +1648,13 @@ header .logo a {
 #resume .resume-timeline {
 	max-width: 980px;
 }
+
 #resume .timeline-wrap {
 	position: relative;
 	margin-top: 1.5rem;
 	margin-bottom: 6rem;
 }
+
 #resume .timeline-wrap::before {
 	content: "";
 	display: block;
@@ -1652,55 +1662,46 @@ header .logo a {
 	height: 100%;
 	background: rgba(0, 0, 0, 0.1);
 	position: absolute;
-	left: 35%;
+	left: 50%;
 	top: 0;
 }
+
 #resume .timeline-block {
 	position: relative;
 	padding-top: 1.5rem;
 }
-#resume .timeline-ico {
-	height: 4.8rem;
-	width: 4.8rem;
-	line-height: 4.8rem;
-	background: #313131;
-	border-radius: 50%;
-	text-align: center;
-	color: #FFFFFF;
-	position: absolute;
-	left: 35%;
-	top: .9rem;
-	margin-left: -2.4rem;
-}
-#resume .timeline-ico i {
-	position: relative;
-	left: .05rem;
-	top: .2rem;
-}
 
 #resume .timeline-header {
 	float: left;
-	width: 35%;
-	padding-right: 90px;
-	text-align: right;
+	width: 50%; /* Allocate 50% width for the left side */
+	padding-right: 0; /* Remove extra padding */
+	text-align: left; /* Align text to the left */
 }
+
 #resume .timeline-header h3 {
+	white-space: normal; /* Allow job title to wrap into multiple lines */
+	word-wrap: break-word; /* Ensure the text breaks within the container */
 	margin-bottom: 0;
+	font-size: 1.8rem;
 }
+
 #resume .timeline-header p {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
 	color: #888888;
 }
+
 #resume .timeline-content {
-	margin-left: 35%;
-	padding-left: 60px;
+	margin-left: 50%; /* Start content from halfway */
+	padding-left: 20px; /* Add padding for separation */
 	text-align: justify;
 }
+
 #resume .timeline-content h4 {
 	position: relative;
 	padding-bottom: 1.8rem;
 }
+
 #resume .timeline-content h4::after {
 	content: "";
 	display: block;
@@ -1713,8 +1714,7 @@ header .logo a {
 }
 
 /**
- * responsive:
- * resume
+ * Responsive: resume adjustments
  * ------------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
@@ -1722,7 +1722,8 @@ header .logo a {
 		padding-right: 50px;
 	}
 	#resume .timeline-header h3 {
-		font-size: 1.8rem;
+		font-size: 1.6rem; /* Adjust job title font size */
+		white-space: normal; /* Allow wrapping on smaller screens */
 	}
 	#resume .timeline-header p {
 		font-size: 1.4rem;
@@ -1731,28 +1732,26 @@ header .logo a {
 		padding-left: 50px;
 	}
 }
+
 @media only screen and (max-width:768px) {
 	#resume .timeline-wrap::before {
-		left: 2.4rem;
+		left: 1.5rem; /* Adjust line position */
 	}
 	#resume .timeline-ico {
 		left: 2.4rem;
 	}
-	#resume .timeline-header {
-		float: none;
-		width: auto;
-		padding-right: 15px;
-		text-align: left;
+	#resume .timeline-header,
+	#resume .timeline-content {
+		width: 100%; /* Stack sections on smaller screens */
+		padding-left: 1.5rem; /* Add padding for smaller screens */
 	}
 	#resume .timeline-header h3 {
 		font-size: 2rem;
+		white-space: normal; /* Allow wrapping on small screens */
 	}
 	#resume .timeline-header p {
 		font-size: 1.5rem;
 		margin-bottom: 1.5rem;
-	}
-	#resume .timeline-content {
-		margin: 0;
 	}
 	#resume .timeline-content h4 {
 		padding-bottom: 0;
@@ -1764,10 +1763,8 @@ header .logo a {
 		bottom: auto;
 		top: 0;
 	}
-	#resume .timeline-header, #resume .timeline-content {
-		padding-left: 7rem;
-	}
 }
+
 @media only screen and (max-width:480px) {
 	#resume .resume-header h2 {
 		font-size: 2.2rem;
@@ -1785,6 +1782,10 @@ header .logo a {
 	}
 	#resume .timeline-header, #resume .timeline-content {
 		padding-left: 5.5rem;
+	}
+	#resume .timeline-header h3 {
+		font-size: 1.8rem;
+		white-space: normal; /* Allow wrapping on very small screens */
 	}
 }
 
