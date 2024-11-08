@@ -157,6 +157,7 @@ p.lead {
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
+	text-align: justify;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -1694,6 +1695,7 @@ header .logo a {
 #resume .timeline-content {
 	margin-left: 35%;
 	padding-left: 60px;
+	text-align: justify;
 }
 #resume .timeline-content h4 {
 	position: relative;
@@ -2155,6 +2157,7 @@ header .logo a {
 }
 .services-list .desc {
 	color: rgba(255, 255, 255, 0.6);
+	text-align: justify;
 }
 
 /* pagination */
